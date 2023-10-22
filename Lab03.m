@@ -15,7 +15,7 @@ user_initial_position = [30, 10];
 wx = 140;
 wy = 50;
 
-f = 3.6;
+f = 3.6 * 10^9;
 Pt = 36.99; % dbm 5W
 refflection = 0.7;
 
@@ -90,7 +90,7 @@ function H = calculateMirrored(user_position, mirroredPoint, wall1_start, wall1_
 
     H = 0;
     refflection = 0.7;
-    f = 3.6;
+    f = 3.6 * 10^9;
     
     isConnectedMirroredPointWall = dwawektory(user_position(1), user_position(2), mirroredPoint(1), mirroredPoint(2), wall1_start(1), wall1_start(2), wall1_end(1), wall1_end(2));
     
